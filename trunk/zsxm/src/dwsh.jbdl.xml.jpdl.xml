@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process name="dwsh.jbdl.xml" xmlns="http://jbpm.org/4.3/jpdl">
+   <start g="276,39,48,48" name="start1">
+      <transition g="-177,-22" name="to 企业信息填报、人才信息录入" to="企业信息填报、人才信息录入"/>
+   </start>
+   <task g="199,120,201,52" name="企业信息填报、人才信息录入">
+      <transition g="-161,-10" name="to 科教城对企业信息进行审核" to="科教城对企业信息进行审核"/>
+   </task>
+   <task g="198,215,207,52" name="科教城对企业信息进行审核">
+      <transition g="-129,-9" name="to 科教城是否审核通过" to="科教城是否审核通过"/>
+   </task>
+   <decision g="275,300,48,48" name="科教城是否审核通过">
+      <transition g="-52,-27" name="审核通过" to="企业信息正式生效(覆盖原有信息)"/>
+      <transition g="521,323;521,148:-179,71" name="审核不通过" to="企业信息填报、人才信息录入"/>
+   </decision>
+   <task g="192,397,211,52" name="企业信息正式生效(覆盖原有信息)">
+      <transition name="to 金凤凰季报" to="金凤凰季报 " g="-76,-5"/>
+   </task>
+   <task g="195,498,200,52" name="金凤凰季报 "/>
+</process>

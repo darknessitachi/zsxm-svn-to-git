@@ -1,0 +1,15 @@
+
+增加表：
+DW_INFO:           SBBZ  2: 审核通过
+DW_INFO_SB       SBBZ  0:待报    1：上报     3：退回     THYY
+DW_MUTSEL_SB
+DW_XM_SB
+DW_RYXX_SB
+
+新增视图：
+DW_INFO_SB_V
+
+
+XT_MENU 表中增加信息
+0901	09	企业信息审核	NULL	dwsh.do	NULL
+

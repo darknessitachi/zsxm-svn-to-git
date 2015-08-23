@@ -1,0 +1,24 @@
+1：DW_CDHXXM 表新增字段：
+	XMNF	varchar(10)	Checked
+	YJXX		numeric(12, 5)	Checked
+	XMFZR	varchar(50)	Checked
+	
+2：新增表：
+	DW_LSSJ
+	DW_SYSYFJSQKB
+	DW_YFJGRHQYQKB	
+	
+	
+3：
+（1）XT_DLB 新增数据
+	31	  数据期 	0 	1
+（2）XT_DICT 新增数据
+31	1	2005	001	0	0	1
+31	2	2006	002	0	0	1
+31	3	2007	003	0	0	1
+31	4	2008	004	0	0	1
+31	5	2009	005	0	0	1
+31	6	2010	006	0	0	1
+31	7	2011	007	0	0	1
+
+	

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd"
+	default-lazy-init="false">
+	
+	<!--schedule管理器，用于动态添加，修改，删除schedule  --> 
+	 <bean id="scheduleManager" class="com.group.zsxm.service.common.ScheduleManager">
+	        <property name="scheduler" ref="schedulerFactory"/>
+	 </bean>
+	 <bean id="dwrSchedulePush" class="com.group.zsxm.web.action.DwrSchedulePush"></bean>
+	 <bean id="executeScheduleService" class="com.group.zsxm.service.ExecuteScheduleService">
+	 	<property  name ="scheduleManager"  ref ="scheduleManager" /> 
+	 	<property  name ="dwrSchedulePush"  ref ="dwrSchedulePush" /> 
+	 </bean> 
+	
+	 <bean  id ="executeCleanJob" 
+        class ="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean" > 
+         <property  name ="targetObject"  ref ="executeScheduleService" /> 
+         <property  name ="targetMethod"  value ="executeCleanSchedule" /> 
+         <property  name ="concurrent"  value ="false" /> 
+     </bean>  
+
+	 <bean  id ="executeJob" 
+        class ="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean" > 
+         <property  name ="targetObject"  ref ="executeScheduleService" /> 
+         <property  name ="targetMethod"  value ="executeSchedule" /> 
+         <property  name ="concurrent"  value ="false" /> 
+     </bean>  
+     <!-- 
+     <bean  id ="executeTrigger" 
+        class ="org.springframework.scheduling.quartz.CronTriggerBean"> 
+          <property  name ="jobDetail"  ref ="executeCleanJob" /> 
+          <property  name ="cronExpression" >
+             <value> 0/10 * * * * ? </value> 
+          </property> 
+     </bean> 
+  	
+ 	<bean  id ="schedulerFactory" lazy-init="false" autowire="no" 
+        class ="org.springframework.scheduling.quartz.SchedulerFactoryBean"> 
+         <property  name ="triggers">
+             <list>                     
+                 <ref  local ="executeTrigger"/> 
+             </list> 
+         </property> 
+     </bean> 
+-->
+  	<bean  id ="schedulerFactory" lazy-init="false" autowire="no" 
+        class ="org.springframework.scheduling.quartz.SchedulerFactoryBean"> 
+     </bean> 
+	<bean id="schedulerJobService" class="com.group.zsxm.service.SchedulerJobService">
+	 	<property  name ="scheduleManager"  ref ="scheduleManager" /> 
+	 	<property name="executeJobDetail" ref="executeJob"></property>
+	</bean>
+</beans>

@@ -1,0 +1,29 @@
+2011-03-03:
+	XM_DFLXR 新增字段：
+		DYLXRBZ	int	Checked
+		
+	DW_LXR\DW_LSSJ  新增字段：
+		SM	varchar(500)	Checked	
+		
+	FZHT_FZSQ:
+		SJNF	varchar(50)	Checked
+		YSFZZ	numeric(18, 4)	Checked	
+		
+	XT_MENU:
+		update xt_menu set sortid='0502' where menuid='0411';
+		update xt_menu set sortid='0504' where menuid='0412';	
+		update xt_menu set pmenuid='04',menuid='0413',sortid='0504',title='入驻单位分类' where menuid='0204';
+		
+	XT_GRID 新增数据：
+		1	DFLXR	对方联系人	100	left	false	true	NULL	13	1
+		1	LXRTEL	联系人手机	100	left	false	true	NULL	14	1
+		3	DFLXR	主要联系人	100	left	false	true	NULL	45	1
+		3	LXRTEL	联系人手机	100	left	false	true	NULL	46	1
+		
+		
+	XM_INFO_V / DW_INFO_V /DW_RYXX_SB_V 修改	
+	
+	GRID 
+	项目进展查询；（新增表式         2
+	. 园区服务查询；（新增表式，     4
+	房租合同                         7

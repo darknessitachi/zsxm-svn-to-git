@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:jee="http://www.springframework.org/schema/jee"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+           http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.5.xsd
+           http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.5.xsd"
+	default-autowire="byName">
+
+	<context:property-placeholder
+		location="classpath:config/database.properties" />
+	
+	<bean id="activeConstants" class="com.group.core.ActiveConstants">
+		<property name="filePath" value="${filePath}"></property>
+	</bean>
+	<context:component-scan
+		base-package="com.group.zsxm.web.action,com.group.zsxm.service" />
+<!-- x
+	<bean id="dataSource"
+		class="com.mchange.v2.c3p0.ComboPooledDataSource"
+		destroy-method="close" p:driverClass="${jdbc.driverClass}"
+		p:jdbcUrl="${jdbc.jdbcUrl}" p:user="${jdbc.user}"
+		p:password="${jdbc.password}"
+		p:initialPoolSize="${c3p0.initialPoolSize}"
+		p:minPoolSize="${c3p0.minPoolSize}"
+		p:maxPoolSize="${c3p0.maxPoolSize}"
+		p:acquireIncrement="${c3p0.acquireIncrement}"
+		p:maxIdleTime="${c3p0.maxIdleTime}"
+		p:maxStatements="${c3p0.maxStatements}" />
+-->	
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName">
+			<value>${jdbc.driverClass}</value>
+		</property>
+		<property name="url">
+			<value>${jdbc.jdbcUrl}</value>
+		</property>
+		<property name="username">
+			<value>${jdbc.user}</value>
+		</property>
+		<property name="password">
+			<value>${jdbc.password}</value>
+		</property>
+		<property name="maxActive" value="40"/>   
+        <property name="maxIdle" value="10"/>   
+        <property name="maxWait" value="2000"/> 
+	</bean>
+		
+	<bean id="transactionManager"
+		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource" />
+	</bean>
+	
+	<!-- 
+		<bean id="schedulerJobService" class="com.group.zsxm.service.SchedulerJobService" init-method="updateNotificationInterval">
+		</bean>
+	 -->	
+    <bean id="lobHandler"  class="org.springframework.jdbc.support.lob.DefaultLobHandler"  lazy-init="true"/>
+	<aop:config proxy-target-class="true">
+		<aop:advisor
+			pointcut="execution(* com.group.zsxm.service.*Service.*(..))"
+			advice-ref="txAdvice" />
+	</aop:config>
+
+	<tx:advice id="txAdvice">
+		<tx:attributes>
+			<tx:method name="get*" read-only="true" />
+			<tx:method name="find*" read-only="true" />
+			<tx:method name="query*" read-only="true" />
+			<tx:method name="*" />
+		</tx:attributes>
+	</tx:advice>
+</beans>

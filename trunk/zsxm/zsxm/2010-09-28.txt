@@ -1,0 +1,44 @@
+DW_INFO_V视图中增加:   DWPASSWORD:
+
+XM_INFO: 增加 字段
+（1） NDWMC	varchar(50)	Checked
+
+
+DW_RYXX  /DW_RYXX_SB/DW_RYXX_BACK 增加字段
+JFHJSTIME	datetime	Checked
+
+
+XT_DLB 新增数据: 
+32 	行业分类(二级)	1	1
+
+XT_DICT 新增数据：
+32	1	行业分类	001	1	0	NULL
+32	10	产业分类	002	1	0	NULL
+32	2	综合研发机构	001002	1	0	NULL
+32	11	装备制造	002001	1	0	NULL
+
+
+XT_MENU 新增字段: 
+SORTID
+
+新增数据：
+0204	02	单位分类	NULL	zsdwby!dwfl.do	NULL	0204
+10	00	金凤凰项目	NULL	NULL	NULL	04
+1001	10	金凤凰项目新增	NULL	jfhadd.do	NULL	0401
+1002	10	金凤凰项目维护	NULL	jfhwh.do	NULL	0402
+
+
+新增表：
+JFHSB_AJF_WH  /  JFHSB_SHZF_WH
+
+新增函数:
+GET_DWMC
+
+
+DWSB1_INFO/DWSB2_INFO/DWSB3_INFO 新增字段：
+ZZXLS	int	Checked
+JNDXYJSXRS	int	Checked
+JNYJBYSRS	int	Checked
+KJHDRYS	int	Checked
+QZYJFZRYS	int	Checked
+

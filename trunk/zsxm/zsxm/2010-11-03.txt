@@ -1,0 +1,8 @@
+2010-11-03:
+	XT_MENU : 新增数据
+		0409	04	  生活/住房补助查询	NULL	  jfhquery!getJfhzf.do	NULL 	0509
+		0410	04	  安家费查询	NULL  	jfhquery!getJfhaj.do	NULL	  0510
+		
+		
+DW_INFO_V :  XIUGAI 
+FZHT_INFO_V : XIUGAI 		

@@ -1,0 +1,7 @@
+EXP_MAIN  EXP_MAIN_ZJ  EXP_MAIN_WB 新增字段：
+	FLDM	varchar(50)	Checked
+执行如下SQL:
+update exp_main_zj set fldm='000000001'	
+	
+	
+EXP_MAIN_ZJ_V 视图修改

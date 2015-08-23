@@ -1,0 +1,4 @@
+EXP_FL_PROTYPE_ZJ 表新增：
+
+执行更新SQL：
+UPDATE EXP_GZGL_BM set bz =90 where dictbh like '001%'

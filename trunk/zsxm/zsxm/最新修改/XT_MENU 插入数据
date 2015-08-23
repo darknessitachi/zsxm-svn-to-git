@@ -1,0 +1,12 @@
+
+XT_MENU表：插入数据
+09	     00	   数据填报管理	    images/skin0/index/2.png	    NULL	            NULL
+0901	  09	   企业填报管理	    NULL	                                    dwsb.do	    NULL
+0902	  09	   金凤凰填报管理	NULL	                                    jfhsb.do	        NULL
+
+
+
+XT_USER_MENU:插入数据
+1	09
+1	0901
+1	0902

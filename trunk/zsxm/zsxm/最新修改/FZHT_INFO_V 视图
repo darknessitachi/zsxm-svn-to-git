@@ -1,0 +1,18 @@
+SELECT     HTID, HTLX, HTBH, HTFS, DWID, CONVERT(varchar(100), HTSTRDATE, 23) AS HTSTRDATE, FZMJ, DWZJ, QMJNFZ, YHZC, YHZCFZ, XSZCFZ, BZ, ISNULL
+                          ((SELECT     DICTNAME
+                              FROM         dbo.XT_DICT AS b
+                              WHERE     (LBID = 6) AND (a.BGDD1 = DICTBH)), '') + '-' + ISNULL
+                          ((SELECT     DICTNAME
+                              FROM         dbo.XT_DICT AS b
+                              WHERE     (LBID = 7) AND (a.BGDD2 = DICTBH)), '') + '-' + ISNULL
+                          ((SELECT     DICTNAME
+                              FROM         dbo.XT_DICT AS b
+                              WHERE     (LBID = 8) AND (a.BGDD3 = DICTBH)), '') + '-' + ISNULL(BGDD4, '') AS ZFDZ,
+                          (SELECT     DICTNAME
+                            FROM          dbo.XT_DICT AS b
+                            WHERE      (LBID = 23) AND (DICTBH = a.HTLX)) AS HTLX_MC,
+                          (SELECT     DWMC
+                            FROM          dbo.DW_INFO AS b
+                            WHERE      (DWID = a.DWID)) AS DWID_MC, CONVERT(varchar(100), HTENDDATE, 23) AS HTENDDATE
+FROM         dbo.FZHT_INFO AS a
+WHERE     (ISNULL(STATUS, 1) = 1)

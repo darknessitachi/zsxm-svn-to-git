@@ -1,0 +1,33 @@
+2011-03-18：
+	EXP_MAIN_V 、EXP_MAIN_WB_V、EXP_MAIN_ZJ_V 视图修改
+	
+	ZJPS 中 SZDW 与 EXP 中 workunit 同步
+	
+	ZJPS 中 BASE_INFO_CONFIG_MX 表中 学历同步有问题,需要重新同步
+	insert into base_info_config_mx(basetype,baseremote,baselocal,bz)
+	select 3,'00'+education,education,1 from BASE_EDUCATION
+	
+	MAIN_PROJECT 中新增 PSFLDM 项目分类 ,ID_ 导入 ID 主键  字段
+	MAIN_PROJECT SPECIALTYA 领域增长 varchar(4)
+	
+	在 XT_MAXID 表中增加 MAIN_PROJECT 项 
+	
+	视图 MAIN_PROJECT_V 修改
+	
+	EXP_FL_RPOTYPE 新增字段：
+		SXZY	varchar(50)	Checked
+		CSZY	varchar(50)	Checked
+		SXZY1	varchar(50)	Checked
+		SXZY2	varchar(50)	Checked
+		SXZY3	varchar(50)	Checked
+	XT_DICT_FLDM： 新增数据 专业数据	
+	
+exp_gz : 添加字段
+WTPJDJ	varchar(20)	Checked
+WTPJYJ	varchar(500)	Checked	
+
+
+XT_DLB_FLDM 表新增
+
+	
+		

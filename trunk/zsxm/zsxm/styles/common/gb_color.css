@@ -1,0 +1,127 @@
+BODY {
+	BACKGROUND-COLOR: #f8fcf6; COLOR: #000000
+}
+HTML {
+	OVERFLOW-Y: scroll
+}
+A:link {
+	COLOR: #328916
+}
+A:visited {
+	COLOR: #328916
+}
+.emlink {
+	COLOR: #bf611c !important
+}
+.mlink {
+	COLOR: #333333 !important
+}
+.em {
+	COLOR: #ff0000
+}
+TEXTAREA {
+	BACKGROUND-IMAGE: url(/qzonestyle/xiaoyou_portal_v2/img/0/bg_tx_area.png); BORDER-BOTTOM-COLOR: #acbca7; BACKGROUND-COLOR: transparent; BORDER-TOP-COLOR: #acbca7; BORDER-RIGHT-COLOR: #acbca7; BORDER-LEFT-COLOR: #acbca7
+}
+.gb_owner_lr .gb_owner_l .bg_mode_l .mode_gb_title H3 A {
+	COLOR: #000 !important
+}
+.gb_owner_lr .gb_owner_layout .gb_owner_m .bg_mode_m .mode_gb_title H3 A {
+	COLOR: #000 !important
+}
+.gb_layout_lr .gb_layout_l .bg_mode_l .mode_gb_title H3 A {
+	COLOR: #000 !important
+}
+.gb_layout_lr .gb_layout_r .bg_mode_r .mode_gb_title H3 A {
+	COLOR: #000 !important
+}
+.gb_layout_ex .gb_layout_r .bg_mode_r .mode_gb_title H3 A {
+	COLOR: #000 !important
+}
+.gb_layout_ex .gb_layout_l .bg_mode_l .mode_gb_title H3 A {
+	COLOR: #000 !important
+}
+.gb_layout_lr .gb_sec_r .bg_mode_r .mode_gb_title H3 A {
+	COLOR: #000 !important
+}
+.gb_layout .comment_msg_wrap {
+	COLOR: #424041
+}
+.s_bgr {
+	BORDER-BOTTOM-COLOR: #d6d6d6; BACKGROUND-COLOR: #fefefe; BORDER-TOP-COLOR: #d6d6d6; BORDER-RIGHT-COLOR: #d6d6d6; BORDER-LEFT-COLOR: #d6d6d6
+}
+.s_bgr .mode_gb_title {
+	BACKGROUND-COLOR: #f1f2ed; COLOR: #3f3f3f
+}
+.c_bgr {
+	BORDER-BOTTOM-COLOR: #c5e7c6; BACKGROUND-COLOR: #fefefe; BORDER-TOP-COLOR: #c5e7c6; BORDER-RIGHT-COLOR: #c5e7c6; BORDER-LEFT-COLOR: #c5e7c6
+}
+.c_bgr .mode_gb_title {
+	BORDER-BOTTOM-COLOR: #c5e7c6; BACKGROUND-COLOR: #e5f3dc; COLOR: #000
+}
+.s_bgr .mode_gb_title H3 A {
+	COLOR: #000 !important
+}
+.c_bgr .mode_gb_title H3 A {
+	COLOR: #000 !important
+}
+.search {
+	BACKGROUND: url(/qzonestyle/xiaoyou_portal_v2/img/0/search_index.png) #fff no-repeat
+}
+.gb_layout {
+	BACKGROUND-IMAGE: url(images/other/bg_grid_m.png); BORDER-BOTTOM-COLOR: #c5e7c6; BORDER-TOP-COLOR: #c5e7c6; BORDER-RIGHT-COLOR: #c5e7c6; BORDER-LEFT-COLOR: #c5e7c6
+}
+.gb_layout_lr .gb_sec_l {
+	BACKGROUND-IMAGE: url(images/other/bg_grid_m.png); BORDER-BOTTOM-COLOR: #c5e7c6; BORDER-TOP-COLOR: #c5e7c6; BORDER-RIGHT-COLOR: #c5e7c6; BORDER-LEFT-COLOR: #c5e7c6
+}
+
+.gb_msg_wrap {
+	BORDER-BOTTOM-COLOR: #fdcd06; BACKGROUND-COLOR: #fdf3d0; BORDER-TOP-COLOR: #fdcd06; BORDER-RIGHT-COLOR: #fdcd06; BORDER-LEFT-COLOR: #fdcd06
+}
+.page .page_list A {
+	COLOR: #000
+}
+.page .page_list A:link {
+	BACKGROUND-COLOR: #fff; COLOR: #000000
+}
+.page .page_list A:hover {
+	BACKGROUND-COLOR: #bfbcb6; COLOR: #fff
+}
+.page .page_list A.current {
+	BACKGROUND-COLOR: #bfbcb6; COLOR: #fff
+}
+.page .page_list .page_pre {
+	BACKGROUND-IMAGE: url(/qzonestyle/xiaoyou_portal_v2/img/0/button.png); BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: transparent; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #000 !important; BORDER-LEFT-WIDTH: 0px
+}
+.page .page_list .present {
+	BACKGROUND-IMAGE: url(/qzonestyle/xiaoyou_portal_v2/img/0/button.png); BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: transparent; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #000 !important; BORDER-LEFT-WIDTH: 0px
+}
+.page .page_list .page_disable {
+	BACKGROUND-IMAGE: url(/qzonestyle/xiaoyou_portal_v2/img/0/button.png); BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: transparent; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #000 !important; BORDER-LEFT-WIDTH: 0px
+}
+.page .page_list .page_pre:hover {
+	BACKGROUND-IMAGE: url(/qzonestyle/xiaoyou_portal_v2/img/0/button.png); BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: transparent; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; COLOR: #000 !important; BORDER-LEFT-WIDTH: 0px
+}
+.page .page_list .page_disable {
+	COLOR: #cccccc !important
+}
+.photo_class_mode .list_photo .current {
+	BORDER-BOTTOM-COLOR: #e7e7e7; BACKGROUND-COLOR: #f8fdf6; BORDER-TOP-COLOR: #e7e7e7; BORDER-RIGHT-COLOR: #e7e7e7; BORDER-LEFT-COLOR: #e7e7e7
+}
+.view_photo_wrap .view_pic_wrap .info_photo A {
+	COLOR: #000
+}
+.view_photo_wrap .view_pic_wrap .info_photo A:hover {
+	BACKGROUND-COLOR: #dff8db
+}
+.tab_hash A {
+	BORDER-BOTTOM-COLOR: #e5f3dc; BORDER-TOP-COLOR: #e5f3dc; BORDER-RIGHT-COLOR: #e5f3dc; BORDER-LEFT-COLOR: #e5f3dc
+}
+.tab_hash A.current {
+	BORDER-BOTTOM-COLOR: #fff; BACKGROUND-COLOR: #fff; BORDER-TOP-COLOR: #bfd5af; BORDER-RIGHT-COLOR: #bfd5af; BORDER-LEFT-COLOR: #bfd5af
+}
+#owner_unlogin .gb_owner_lr .gb_owner_layout {
+	BACKGROUND-IMAGE: url(/qzonestyle/xiaoyou_portal_v2/img/0/bg_grid_fst.png); BORDER-BOTTOM: #acd98c 1px solid; BORDER-LEFT: #acd98c 1px solid; BACKGROUND-COLOR: #fff; BORDER-TOP: #acd98c 1px solid; BORDER-RIGHT: #acd98c 1px solid
+}
+.gb_layout_narrow .gb_layout_l {
+	BACKGROUND-COLOR: #fefefe
+}

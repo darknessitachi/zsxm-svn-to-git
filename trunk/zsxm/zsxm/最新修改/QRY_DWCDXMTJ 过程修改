@@ -1,0 +1,68 @@
+set ANSI_NULLS ON
+set QUOTED_IDENTIFIER ON
+go
+
+
+
+
+
+
+-- =============================================
+-- Author:		<Author,,Name>
+-- Create date: <Create Date,,>
+-- Description:	<Description,,>
+-- =============================================
+ALTER PROCEDURE [dbo].[QRY_DWCDXMTJ]
+	@type varchar(20)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+	-- Insert statements for procedure here
+    
+    DELETE FROM TEMP_TAB;
+
+    if @type = '1'
+	begin
+		-- insert 立项级别
+		insert into TEMP_TAB (c2,n1,hjje) 
+		select xmjb,COUNT(*),sum(xmje) from  DW_CDXM	
+		where xmjb <>'' and  (isnull(STATUS,1) = 1)  group by xmjb;
+		-- update table
+		--select * from xt_dict where lbid = 2 
+		update temp_tab set c1 = (select dictname from xt_dict where dictbh = temp_tab.c2
+			and lbid = 16);
+		update temp_tab set n5 = (select sum(n1) from temp_tab );
+		update temp_tab set n2 = n1/n5 where n5 <>0;
+    end ;
+
+    if @type = '2'
+	begin
+		-- insert 计划类别
+		insert into TEMP_TAB (c2,n1,hjje) 
+		select JHLB,COUNT(*),sum(xmje) from  DW_CDXM	
+		where JHLB <>'' and  (isnull(STATUS,1) = 1)  group by JHLB;
+		-- update table
+		--select * from xt_dict where lbid = 2 学历
+		update temp_tab set c1 = (select dictname from xt_dict where dictbh = temp_tab.c2
+			and lbid = 20);
+		update temp_tab set n5 = (select sum(n1) from temp_tab );
+		update temp_tab set n2 = n1/n5 where n5 <>0;
+    end ;
+
+
+    
+    update TEMP_TAB set c3 = CAST((n2 * 100) as varchar(10))  + '%';
+    
+	SELECT c1 as tp,n1 as rs, c3 as bl,c2 as dm,isnull(hjje,0) hjje FROM TEMP_TAB;
+	
+END
+
+
+
+
+
+
+
+

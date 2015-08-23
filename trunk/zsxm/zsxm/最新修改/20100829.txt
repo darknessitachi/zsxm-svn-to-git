@@ -1,0 +1,15 @@
+(1)新增函数：
+GET_MUTSEL_MC
+
+(2)XT_MENU 数据如下修改:
+主要增加 0405 
+
+0405	04	承担项目查询	NULL	dwcdxmquery.do	NULL
+0406	04	承担项目统计	NULL	dwcdxmanalys.do	NULL
+0407	04	房租合同查询	NULL	fzhtquery.do	NULL
+0408	04	房租合同统计	NULL	fzhtanalys.do	NULL
+
+
+(3)修改标题：
+update xt_menu set title='机构信息审核'  where menuid='0901' --企业信息审核 改为 “机构信息审核”
+

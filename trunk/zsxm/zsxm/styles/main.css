@@ -1,0 +1,33 @@
+html,body {margin: 0px;padding: 0px;border: 0px;font-family: Verdana, Tahoma, "����";overflow: hidden;}
+body,div,table,select,td,p,a{font-size:12px;/*color:#484848*/}
+td,input,button,select,body {font-family:"lucida Grande",Verdana;font-size:12px;}
+form{margin: 0px;padding: 0px;border: 0px;}
+img {border:none}
+a {text-decoration:none;cursor:pointer;}
+a{ blr:expression(this.onFocus=this.blur()); outline:none; } 
+a:focus{ -moz-outline-style: none; /* FF */ }
+TABLE {WORD-BREAK: break-all}
+/**Table Main Css**/
+.tableContainer {width: 100%;overflow: auto;margin: 0;border-bottom: solid 1px #bacddc;border-left: solid 1px #bacddc;border-right: solid 1px #bacddc;border-top: solid 1px #bacddc;}
+.tableContainer thead tr {position:relative;top: expression(offsetParent.scrollTop);height:25px}
+.tableContainer table tfoot tr {position: relative;overflow-x: hidden;top: expression(parentNode.parentNode.offsetHeight >= offsetParent.offsetHeight?offsetParent.offsetHeight + offsetParent.scrollTop - parentNode.parentNode.offsetHeight:offsetParent.offsetHeight - parentNode.parentNode.offsetHeight);}
+.tableContainer td:last-child {padding-right: 20px;}
+
+.button{
+cursor:hand;
+height:22px;
+background: #FFFFFF url("../images/skin0/other/tdbg2.gif") repeat-x top left;
+padding:0px 3px;
+border:1px solid #67C1E4;
+}
+.button1{
+cursor:hand;
+height:16px;
+background: #FFFFFF url("../images/skin0/other/tdbg2.gif") repeat-x top left;
+padding:0px;
+border:1px solid #67C1E4;
+}
+.button3 {
+BORDER-RIGHT: #7b9ebd 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #7b9ebd 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#cecfde); BORDER-LEFT: #7b9ebd 1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; BORDER-BOTTOM: #7b9ebd 1px solid
+}
+

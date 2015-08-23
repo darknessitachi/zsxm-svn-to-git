@@ -1,0 +1,71 @@
+/**** �� ��ʽ*****/
+.xTree {
+	font-family:����, microsoft sans serif, verdana;
+	font-size: 12px;
+	position: relative;
+}
+
+.tlc_headings {
+	position:relative;
+	height:18px;
+        line-height:100%;
+}
+
+.tlc_columnheading {
+	font-size: 12px;
+        height:18px;
+	line-height:100%;
+        position: absolute;
+	background-color: threedface;
+	border: 1px outset;
+	border-top: 1px solid #eeeeee;
+	border-left: 1px solid #eeeeee;
+        padding:4px 2px 0px 4px;
+}
+
+.tlc_node {
+	position: relative;
+}
+
+.tlc_node_row {
+	position: relative;
+	height:18px;
+}
+
+.tlc_node_row_hover {
+	position: relative;
+	background-color: threedface;
+	height:18px;
+}
+
+.tlc_node_row_click {
+	position: relative;
+	background-color: c0d2ec;
+	color:#eeeeee;
+	height:18px;
+}
+
+.tlc_node_text {
+	position: absolute;
+	height: 18px;
+	vertical-align: middle;
+	white-space: nowrap;
+	cursor:hand
+}
+
+.tlc_node_children {
+}
+
+.tlc_node_sel{
+  background-color: #c0d2ec;
+  height: 18px;
+  padding:0px 2px 0px 4px;
+  margin-left:-4px
+}
+
+.tlc_node_lbl{
+  height: 18px;
+  padding:0px 2px 0px 4px;
+  margin-left:-4px
+}
+/**************�� ��ʽ ����*******/

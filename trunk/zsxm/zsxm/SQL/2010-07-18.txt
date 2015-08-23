@@ -1,0 +1,5 @@
+DW_ZSCQ表增加如下字段： 
+	SQNF	varchar(10)	Checked
+	SQR	    varchar(50)	Checked
+	
+	

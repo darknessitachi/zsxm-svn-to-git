@@ -1,0 +1,12 @@
+2008-12-13:
+GET_MUTSEL_MC 修改
+
+DW_CDXM_V \
+
+
+XT_DLB:
+47	园区接待人	0	1
+
+
+新增表：
+XM_JZQK  \  XM_DFLXR

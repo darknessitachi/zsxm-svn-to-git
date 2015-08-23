@@ -1,0 +1,21 @@
+新增表：
+XT_MENU_SB   单位上报菜单
+
+INFO_LM 表：增加数据
+10 	机构通知通告	 NULL 	NULL
+
+新增视图：
+DWSB1_INFO_V
+DWSB2_INFO_V
+DWSB3_INFO_V
+
+修改表：
+DWSB1_INFO  增加字段 STATUS    int 
+DWSB2_INFO  增加字段 STATUS    int 
+DWSB3_INFO  增加字段 STATUS    int 
+
+DW_INFO        增加字段  DAH  varchar(100)
+
+
+   
+

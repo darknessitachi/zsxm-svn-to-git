@@ -1,0 +1,46 @@
+DW_INFO,DW_INFO_SB ，新增字段
+		DABH	varchar(50)	Checked
+		RZYQSJ	varchar(50)	Checked
+		DWZYCP	varchar(500)	Checked
+		GSJSQY	varchar(50)	Checked
+		GXJSQY	varchar(50)	Checked
+		LXSQY	int	Checked
+		RJQY	varchar(50)	Checked
+		DMQY	varchar(50)	Checked
+		GJCXKJYQ	varchar(50)	Checked
+		GJQDXXCY	varchar(50)	Checked
+		XDFWY	varchar(50)	Checked
+		FWWB	varchar(50)	Checked
+		LHRH	varchar(50)	Checked
+		LXQY	varchar(50)	Checked
+		CMMI	varchar(50)	Checked
+		DWSB	varchar(50)	Checked
+		ZYCP	varchar(50)	Checked
+		SSCTD	varchar(50)	Checked
+		SSCPC	varchar(50)	Checked
+
+XT_DLB/ XT_DICT
+		33	入驻园区时间	0	1
+		34	高新技术企业	0	1
+		35	软件企业	0	1
+		36	动漫企业	0	1
+		37	国家创新型科技园区（常州市）	0	1
+		38	国家七大新兴产业（十二五期间）	1	1
+		39	现代服务业	0	1
+		40	服务外包	1	1
+		41	两化融合	0	1
+		42	CMMI认证	0	1
+		43	商标	0	1
+		44	主营产品	0	1
+		45	省双创批次	0	1
+		46	投资类型	0	1
+
+
+DW_GQBL
+TZLX	varchar(50)	Checked
+
+XT_DICT  : SORT 修改 SORT	numeric(18, 2)	Checked
+XT_DICT ： 新增字段 PCH	varchar(50)	Checked
+
+
+

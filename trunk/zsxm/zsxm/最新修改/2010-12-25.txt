@@ -1,0 +1,15 @@
+DW_INFO_V 修改
+translen 函数新增
+base_tree . SX 字段 修改为 varchar(50)
+
+XT_MENU ： 新增：
+0411	04	项目进展查询	NULL	xmquery!xmjzQuery.do	NULL	0411
+0412	04	园区服务查询	NULL	dwquery!yqfwQuery.do	NULL	0412
+
+XT_GRID : 新增数据 
+GTYPE = 5,6
+
+
+新增 视图：
+XM_JZQK_V
+DW_YQFW_V

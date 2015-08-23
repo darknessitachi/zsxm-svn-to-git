@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="default" extends="struts-default"  abstract="true">
+		<interceptors>
+			<interceptor name="authentication" class="com.netwander.explib.web.interceptor.AuthenticationInterceptor" />
+			<interceptor-stack name="appSimpleStack">
+				<interceptor-ref name="paramsPrepareParamsStack" />
+				<interceptor-ref name="authentication" />
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="paramsPrepareParamsStack" />
+	</package>
+	
+	<package name="appDefault" namespace="/" extends="default">
+	   <default-interceptor-ref name="appSimpleStack"/>
+	</package>
+</struts>

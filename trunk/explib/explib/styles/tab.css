@@ -1,0 +1,87 @@
+.divchildtab,.divchildtabHover,.divchildtabCurrent,.divchildtabDisabled
+	{
+	position: relative;
+	text-decoration: none;
+	height: 26px;
+	_height: 25px;
+	margin: 3px 0 0 4px;
+	cursor: pointer;
+	background: url(../images/tab/s_tabout_bg_left.gif) no-repeat left
+		top;
+	display: block;
+	float: left;
+	border-bottom: #99a7b1 1px solid;
+}
+
+.divchildtabHover,.divchildtabCurrent {
+	background: url(../images/tab/s_tabover_bg_left.gif) no-repeat left
+		top;
+	border-bottom: #fff 1px solid;
+}
+
+.divchildtabDisabled {
+	cursor: not-allowed;
+	background: url(../images/tab/s_tabDsb_bg_left.gif) no-repeat left
+		top;
+}
+
+.divchildtab img,.divchildtabHover img,.divchildtabCurrent img,.divchildtabDisabled img
+	{
+	width: 16px;
+	height: 16px;
+	margin: 6px 5px 0px 8px;
+	display: inline;
+	float: left;
+}
+
+.divchildtab img {
+	opacity: 0.7;
+	filter: Alpha(Opacity = 70);
+}
+
+.divchildtabDisabled img {
+	opacity: 0.5;
+	filter: gray Alpha(Opacity = 50);
+}
+
+.divchildtab b,.divchildtabHover b,.divchildtabCurrent b,.divchildtabDisabled b
+	{
+	color: #666;
+	font-weight: normal;
+	height: 25px;
+	line-height: 24px;
+	padding: 1px 20px 0 0;
+	background: url(../images/tab/s_tabout_bg_right.gif) no-repeat
+		right top;
+	display: block;
+	float: left;
+	border-bottom: #99a7b1 1px solid;
+	_border-bottom: none;
+}
+
+.divchildtabHover b,.divchildtabCurrent b {
+	color: #147;
+	background: url(../images/tab/s_tabover_bg_right.gif) no-repeat
+		right top;
+	border-bottom: #fff 1px solid;
+	_border-bottom: none;
+}
+
+.divchildtabDisabled b {
+	color: #999;
+	background: url(../images/tab/s_tabDsb_bg_right.gif) no-repeat
+		right top;
+}
+
+.divchildtabHover {
+	border-bottom: #99a7b1 1px solid;
+}
+
+.divchildtabHover b {
+	border-bottom: #99a7b1 1px solid;
+	_border-bottom: none;
+}
+
+.divchildtabCurrent b {
+	color: #000000;
+}

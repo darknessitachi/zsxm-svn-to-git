@@ -1,0 +1,13 @@
+EXP_MAIN_V ： 修改
+
+EXP_MAIN EXP_MAIN_WB  EXP_MAIN_ZJ  ： GRRY 修改 varchar(100)
+
+EXP_FL_PROTYPE   EXP_FL_PROTYPE_WB  EXP_FL_PROTYPE_ZJ :
+	新增字段：
+	SXLYO	varchar(200)	Checked
+	CSLYO	varchar(200)	Checked
+	SXLY1O	varchar(200)	Checked
+	SXLY2O	varchar(200)	Checked
+	SXLY3O	varchar(200)	Checked
+
+

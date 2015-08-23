@@ -1,0 +1,21 @@
+SELECT     XMID, CONVERT(varchar(100), RQ, 23) AS RQ, XMLB, XMMC, XMXJ, XMGS, XMJDGS, XMJZQK, YJTR, XMWT, DFLXR, DFLXRDH, DFLXRSJ, XMGZR, BZXX,
+                          (SELECT     DICTNAME
+                            FROM          dbo.XT_DICT AS b
+                            WHERE      (LBID = 1) AND (a.XMLB = DICTBH)) AS XMLB_MC,
+                          (SELECT     DICTNAME
+                            FROM          dbo.XT_DICT AS b
+                            WHERE      (LBID = 2) AND (a.XMXJ = DICTBH)) AS XMXJ_MC,
+                          (SELECT     DICTNAME
+                            FROM          dbo.XT_DICT AS b
+                            WHERE      (LBID = 3) AND (a.XMJDGS = DICTBH)) AS XMJDGS_MC,
+                          (SELECT     CNNAME
+                            FROM          dbo.XT_USER AS b
+                            WHERE      (a.XMGZR = CONVERT(varchar(20), USERID))) AS XMGZR_MC,
+                          (SELECT     DWMC
+                            FROM          dbo.DW_INFO
+                            WHERE      (DWID =
+                                                       (SELECT     DWID
+                                                         FROM          dbo.DW_XM
+                                                         WHERE      (STATUS <> 9) AND (XMID = a.XMID)))) AS DWID_MC
+FROM         dbo.XM_INFO AS a
+WHERE     (ISNULL(STATUS, 1) = 1)

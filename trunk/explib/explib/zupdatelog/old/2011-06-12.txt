@@ -1,0 +1,8 @@
+XT_DLB\XT_DICT  新增 专家类型  LBID=36
+
+EXP_MAIN  EXP_MAIN _ZJ  EXP_MAIN _WB   表增加字段 
+	SCTZHY	varchar(50)	Checked
+	GRRY	varchar(10)	Checked
+
+新增表：
+EXP_EXPTYPE 	EXP_EXPTYPE_ZJ      EXP_EXPTYPE_WB	

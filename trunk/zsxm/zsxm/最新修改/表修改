@@ -1,0 +1,17 @@
+FZHT_INFO:
+新增字段：
+BGDD1  varhcar(10)
+BGDD2  varchar(10)
+BGDD3  varchar(10)
+BGDD4  varchar(40)
+
+
+FZHT_FZSQ:
+新增字段：
+SJENDDATE datatime
+
+
+TEMP_TAB：
+新增字段 ：
+hjje    numeric(20,5)
+

@@ -1,0 +1,15 @@
+JFHSB 表新增字段:
+SBSTRTIME	datetime	Checked
+SBENDTIME	datetime	Checked
+
+DW_RYXX/ DW_RYXX_SB 新增字段
+DJYY	varchar(50)	Checked
+DJSM	varchar(500)	Checked
+
+
+XT_DLB 新增数据
+29	冻结原因	0	1
+
+XT_DICT:
+29	1	离职	001	0	0	1
+29	2	调离	002	0	0	1

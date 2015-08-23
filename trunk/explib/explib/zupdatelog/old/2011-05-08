@@ -1,0 +1,6 @@
+	EXP_MAIN_V : 视图修改
+	EXP_FL_PROTYPE_WB 表新增：
+	EXP_GZGL_BM 增加字段:
+		WBDICTBH	varchar(50)	Checked
+	EXP_GZ 增加字段:: 
+		GZQK	varchar(500)	Checked	

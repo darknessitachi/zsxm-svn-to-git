@@ -1,0 +1,3 @@
+insert into xt_menu(menuid,pmenuid,title,action) values('0405','04','承担项目情况统计表','dwcdxmanalys.do')
+
+insert into xt_menu_user(userid,menuid) values(1,'0405')

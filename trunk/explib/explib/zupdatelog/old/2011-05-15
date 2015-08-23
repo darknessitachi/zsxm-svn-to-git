@@ -1,0 +1,7 @@
+1：EXP_MAIN  EXP_MAIN_WB  EXP_MAIN_ZJ
+	新增 ISCLBZ	varchar(2)	Checked 字段
+	
+注： 已处理 的  ISCLBZ =1 	
+2:dbo.EXP_MAIN_V ： 修改
+
+3: XT_SEARCH : 增加数据

@@ -1,0 +1,6 @@
+update xt_menu set title='承担项目统计' where title='承担项目情况统计表'
+update xt_menu set title='招商项目查询' where title='项目查询'
+update xt_menu set title='招商项目统计' where title='项目统计'
+
+update xt_menu set title='入驻单位查询' where title='单位查询'
+update xt_menu set title='入驻单位统计' where title='单位统计'

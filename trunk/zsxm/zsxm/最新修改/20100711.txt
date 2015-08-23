@@ -1,0 +1,23 @@
+XM_INFO:
+增加字段： XMBH	numeric(18, 0)	Checked
+注： 先将原有的数据 更新一下， update xm_info set xmbh=xmid
+
+
+表增加字段 DW_INFO / DW_INFO_SB
+TDPC	       varchar(50)	Checked
+DWGZR	   int	Checked
+SNXSSR	   numeric(20, 2)	Checked
+SNJNSS	   numeric(20, 2)	Checked
+SNDYGS	int	Checked
+
+XT_DLB:
+	增加数据：
+	30 	团队批次	0	1
+	 
+XT_DICT: 
+	增加数据：
+30 	1	批次一	001	0	0	1
+30	    2  	批次二	002	0	0	1	
+	
+	
+DW_INFO_V: 视图修改
